@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TripsandTravelesSystemModelStoreContainer" CdmEntityContainer="TripsandTravelesSystemEntities">
+    <EntitySetMapping Name="Admin">
+      <EntityTypeMapping TypeName="TripsandTravelesSystemModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Agency">
+      <EntityTypeMapping TypeName="TripsandTravelesSystemModel.Agency">
+        <MappingFragment StoreEntitySet="Agency">
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RatePosts">
+      <EntityTypeMapping TypeName="TripsandTravelesSystemModel.RatePosts">
+        <MappingFragment StoreEntitySet="RatePosts">
+          <ScalarProperty Name="RateId" ColumnName="RateId" />
+          <ScalarProperty Name="Like" ColumnName="Like" />
+          <ScalarProperty Name="DisLike" ColumnName="DisLike" />
+          <ScalarProperty Name="Stars" ColumnName="Stars" />
+          <ScalarProperty Name="TravalerId" ColumnName="TravalerId" />
+          <ScalarProperty Name="PostId" ColumnName="PostId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Saved">
+      <EntityTypeMapping TypeName="TripsandTravelesSystemModel.Saved">
+        <MappingFragment StoreEntitySet="Saved">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="TravelerId" ColumnName="TravelerId" />
+          <ScalarProperty Name="PostId" ColumnName="PostId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Travaler">
+      <EntityTypeMapping TypeName="TripsandTravelesSystemModel.Travaler">
+        <MappingFragment StoreEntitySet="Travaler">
+          <ScalarProperty Name="TravalerId" ColumnName="TravalerId" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Photo" ColumnName="Photo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TripPost">
+      <EntityTypeMapping TypeName="TripsandTravelesSystemModel.TripPost">
+        <MappingFragment StoreEntitySet="TripPost">
+          <ScalarProperty Name="TripId" ColumnName="TripId" />
+          <ScalarProperty Name="TripTitle" ColumnName="TripTitle" />
+          <ScalarProperty Name="TripDetails" ColumnName="TripDetails" />
+          <ScalarProperty Name="PostDate" ColumnName="PostDate" />
+          <ScalarProperty Name="TripDate" ColumnName="TripDate" />
+          <ScalarProperty Name="TripDestination" ColumnName="TripDestination" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="TripImage" ColumnName="TripImage" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="AgencyId" ColumnName="AgencyId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
